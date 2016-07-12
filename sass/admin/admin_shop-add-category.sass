@@ -1,0 +1,145 @@
+.shadow
+	// display: none
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, .75) 
+.active-shadow
+	display: block
+	z-index: 1
+.shop-add-category
+	// display: none
+	width: 70%
+	background: #ffffff
+	position: fixed
+	top: 0
+	left: 50%
+	transform: translateX(-50%)
+	-webkit-transform: translateX(-50%)
+	margin-top: 10%
+	z-index: 2
+	.shop-add-category-close
+		position: absolute
+		top: 15px
+		right: 15px
+		width: 10px
+		height: 9px
+		cursor: pointer
+		background: url('../img/icon-close.svg') no-repeat
+	.shop-add-category-main
+		label
+			font-size: 12px
+			line-height: 12px
+			color: #999999
+		.shop-add-category-head
+			background: #f7f9fc
+			p
+				font-size: 12px
+				line-height: 12px
+				color: #4c4c4c
+				padding: 15px 0
+				text-align: center
+		.category-text
+			padding: 40px 110px 60px 110px	
+			.category-head
+				text-align: center
+				font-size: 0
+				.category
+					padding: 0
+					margin: 0
+					margin-bottom: 30px
+					li
+						display: inline-block
+						width: 50%
+						border-bottom: 2px solid #cfd8dc
+						font-size: 14px
+						line-height: 14px
+						color: #cfd8dc
+						text-transform: uppercase
+						text-decoration: none
+						padding: 0	
+						padding-bottom: 20px
+						cursor: pointer	
+					.active
+						border-bottom: 2px solid #65b545
+						color: #4c4c4c
+			.form
+				select
+					font-size: 12px
+					line-height: 12px
+					color: #4c4c4c
+					outline: none
+					border: 1px solid #eef0f3
+					padding: 9px 10px
+					border-radius: 5px
+					width: 140px
+					margin-bottom: 10px
+				input[type="text"]
+					font-size: 14px
+					line-height: 14px
+					border: 1px solid #eef0f3
+					height: 13px
+					outline: none
+					padding: 10px 10px
+					border-radius: 5px
+					margin-bottom: 20px
+					color: #4c4c4c
+					width: 95%
+				::-webkit-input-placeholder
+					color: #4c4c4c
+				::-moz-placeholder
+					color: #4c4c4c   
+				:-moz-placeholder  
+					color: #4c4c4c        
+				:-ms-input-placeholder
+					color: #4c4c4c
+				.border-category
+					border-bottom: 1px solid #dddddd
+					margin-bottom: 30px
+					.radio-form-padding
+						padding-top: 5px
+					.radio-form
+						float: left
+						margin-right: 30px
+						&:last-child
+							margin-right: 0
+						label
+							display: inline-block
+							margin-left: 5px
+						input[type="text"]
+							width: 50px
+						input[type="radio"]
+							display: none	
+						input[type="radio"]+label
+							position: relative
+							padding-left: 20px
+							display: inline-block
+							vertical-align: middle
+							cursor: pointer
+							line-height: 28px
+							&:before
+								content: ""
+								display: block
+								position: absolute
+								top: 5px
+								left: 0
+								width: 16px
+								height: 16px
+								background: url("../img/icon-radio-box.png") no-repeat
+						input[type="radio"]
+							&:checked+label:before
+								background: url("../img/icon-radio-checked-box.png") no-repeat
+				.button-add-category
+					display: inline-block
+					font-size: 12px
+					line-height: 12px
+					padding: 11px 30px
+					border-radius: 5px		
+					text-transform: uppercase
+					border: none
+					outline: none
+					color: #ffffff
+					width: 160px
+					background: #65b545

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=970px">
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="admin-head">
+		<div class="container-admin">
+			<h2>Настройки</h2>
+		</div>
+	</div>
+	<div class="settings">
+		<div class="container-inline clearfix">
+			<form method="POST">
+				<div class="settings-column clearfix">
+					<div class="settings-column-1">
+						<label for="work-hours">Время работы c</label><br>
+						<label for="car-wash">Автосервис</label><br>
+						<label for="tire">Шиномонтаж</label><br>
+						<label for="lift">Подъемник</label><br>
+					</div>
+					<div class="settings-column-2">	
+						<input type="text" id="work-hours" name="with-hour-work" placeholder="00">
+						<span>ч.</span>
+						<input type="text" id="work-hours" name="with-minutes-work" placeholder="00">
+						<span>мин.</span><br>
+						<input type="text" id="car-wash" name="minutes-service">
+						<span>мин.</span><br>
+						<input type="text" id="tire" name="minutes-tire">
+						<span>мин.</span><br>
+						<select name="lift" id="lift">
+							<option value="Верста 1">Верста 1</option>
+							<option value="Верста 2">Верста 2 </option>
+						</select><br>
+						<input type="checkbox" name="agreement-info" id="agreement-info" checked>
+						<label class="label-size" for="agreement-info">Предоплата</label><br>
+					</div>
+					<div class="settings-column-3">
+						<span>До</span>
+						<input type="text" id="work-hours" name="to-hour-work" placeholder="00">
+						<span>ч.</span>
+						<input type="text" id="work-hours" name="to-minutes-work" placeholder="00">
+						<span>мин.</span><br>
+						<button class="added-button">Добавить</button>
+					</div>
+				</div>
+				<button class="saved-button">Сохранить</button>
+			</form>
+		</div>
+	</div>
+
+
+	<div class="hidden"></div>
+
+	
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/admin.js"></script>
+	
+</body>
+</html>

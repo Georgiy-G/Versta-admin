@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=970px">
+	
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>	
+	
+
+	<div class="hidden"></div>
+
+	<div class="container-admin">
+		<div class="content_header">
+			<h1 class="content_header-title">Запчасти</h1>
+			<button class="content_header-add"><img src="img/icon_add-new.png"><div>Добавить заказ</div></button>
+		</div>
+
+		<div class="detail_wrapper">
+			<div class="detail_top">
+				<div class="detail_header detail-date">Дата</div>
+				<div class="detail_header detail-name">Имя клиента</div>
+				<div class="detail_header detail-phone">Телефон</div>
+				<div class="detail_header detail-one">Запчасть</div>
+				<div class="detail_header detail-status">Статус</div>
+				<div class="detail_header edit"></div>
+			</div>
+			<div class="details-list">
+				<div class="detail-item">
+					<div class="detail detail-date">28.04.16 / 18:45</div>
+					<div class="detail detail-name">Антон Захаров</div>
+					<div class="detail detail-phone">+ 7 900 987 65 32</div>
+					<div class="detail detail-one">
+						<ol>
+							<li>Ремень ГРМ</li>
+							<li>Стекло боковое Toyota</li>
+							<li>Задние стойки Koni RF</li>
+						</ol>
+					</div>
+					<div class="detail detail-status">Ожидает
+						<div class="status-process"></div>
+					</div>
+					<div class="detail edit">
+						<div class="edit-button">
+							<img src="img/icon-pencil.png">
+						</div>
+					</div>
+				</div>
+				<div class="detail-item">
+					<div class="detail detail-date">26.04.16 / 10:45</div>
+					<div class="detail detail-name">Олег Кошелев</div>
+					<div class="detail detail-phone">+ 7 900 987 65 32</div>
+					<div class="detail detail-one">
+						<ol>
+							<li>Турбина для Е200</li>
+						</ol>
+					</div>
+					<div class="detail detail-status">На складе
+						<div class="status-confirmed"></div>
+					</div>
+					<div class="detail edit">
+						<div class="edit-button">
+							<img src="img/icon-pencil.png">
+						</div>
+					</div>
+				</div>
+				<div class="detail-item">
+					<div class="detail detail-date">15.04.16 / 15:45</div>
+					<div class="detail detail-name">Арсений</div>
+					<div class="detail detail-phone">+ 7 900 987 22 11</div>
+					<div class="detail detail-one">
+						<ol>
+							<li>Комплект ковриков</li>
+							<li>Кованые диски R15</li>
+						</ol>
+					</div>
+					<div class="detail detail-status">Ожидает
+						<div class="status-cancelled"></div>
+					</div>
+					<div class="detail edit">
+						<div class="edit-button">
+							<img src="img/icon-pencil.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/admin.js"></script>
+	
+</body>
+</html>

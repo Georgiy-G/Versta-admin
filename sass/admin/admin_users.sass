@@ -1,0 +1,103 @@
+body
+	background: $bg-main
+
+	.content_header
+		.content_header-title
+			font-size: 18px
+			padding: 33px 0
+			text-transform: uppercase
+			color: $black
+			display: inline-block
+		.content_header-add
+			float: right
+			box-sizing: border-box
+			background: $white
+			color: #4d4d4d
+			border: 1px solid #edeff2
+			border-radius: 5px
+			padding: 8px 20px
+			margin: 14px 0
+			vertical-align: middle
+			img
+				display: inline-block
+				padding-right: 10px
+				padding-top: 7px
+			div
+				display: inline-block
+				vertical-align: top
+				padding-top: 7px
+			&:focus
+				outline: 0
+	
+	.users_wrapper
+		box-sizing: border-box
+		background: $white
+		border: 1px solid #edeff2
+		border-radius: 5px
+		padding: 25px 40px 0 40px
+		.users
+			padding-bottom: 25px
+			border-bottom: 1px solid #edeff2
+			.users_header
+				display: inline-block
+				color: #bdbdbd
+				&::selection
+					background: transparent
+			.avatar
+				width: 11.6%
+			.name
+				width: 11.3%
+			.surname
+				width: 11.9%
+			.login
+				width: 10.1%
+			.email
+				width: 15.9%
+			.current-passworrd
+				width: 12.9%
+			.new-password
+				width: 13.3%
+			.edit
+				width: 9.7%
+		
+		.users-list
+			.user-item
+				line-height: 40px
+				border-bottom: 1px solid #edeff2
+				&:last-of-type
+					border-bottom: none
+				.user
+					display: inline-block
+					padding: 30px 0
+					vertical-align: top
+					&::selection
+						background: transparent
+				.avatar
+					width: 11.6%
+					img
+						border-radius: 50%
+						vertical-align: middle
+						&::selection
+							background: transparent
+				.name
+					width: 11.3%
+				.surname
+					width: 11.9%
+				.login
+					width: 10.1%
+				.email
+					width: 15.9%
+				.current-password
+					width: 12.9%
+				.new-password
+					width: 13.3%
+				.edit
+					width: 9.7%
+					img
+						vertical-align: middle
+						cursor: pointer
+					.icon-close
+						width: 8px
+						height: 8px
+						float: right
+						padding: 16px 0

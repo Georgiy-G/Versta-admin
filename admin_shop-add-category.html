@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=970px">
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="shadow"></div>
+	<div class="shop-add-category">
+		<div class="shop-add-category-close"></div>
+		<div class="shop-add-category-main">
+			<div class="shop-add-category-head">
+				<p>Добавить категорию / подкатегорию</p>
+			</div>
+			<div class="category-text">
+				<div class="category-head">
+					<ul class="category">
+						<li class="category-name">Категория</li>
+						<li class="subcategory-name active">Подкатегория</li>
+					</ul>
+				</div>
+
+				<div class="form form-subcategory">
+					<form method="POST">
+						<label for="category-id">
+							Категория
+						</label><br>
+						<select name="lift" id="lift">
+						<option value="Верста 1">Выбрать</option>
+						<option value="Верста 2">Категория.... </option>
+						</select><br>
+						<label for="name-id">
+							Название
+						</label><br>
+						<input type="text" id="name-id" name="name-category"><br>
+					
+						<div class="border-category clearfix">
+							<div class="radio-form radio-form-padding">
+								<input type="radio" id="first-subcategory" name="category-count" value="first-subcategory" checked>
+								<label for="first-subcategory">Первой</label>
+							</div>
+							<div class="radio-form radio-form-padding">
+								<input type="radio" id="last-subcategory" name="category-count" value="last-subcategory">
+								<label for="last-subcategory">Последней</label>
+							</div>
+							<div class="radio-form radio-form-text">
+								<input type="text" id="count" name="category-score">
+								<label for="count">По счету</label>
+							</div>
+						</div>
+						<button class="button-add-category">Добавить</button>			
+					</form>
+				</div>
+				<div class="form form-category hidden">
+					<form method="POST">
+						<label for="name-id">
+							Название
+						</label><br>
+						<input type="text" id="name-id" name="name-category"><br>
+					
+						<div class="border-category clearfix">
+							<div class="radio-form radio-form-padding">
+								<input type="radio" id="first-category" name="category-count" value="first-category" checked>
+								<label for="first-category">Первой</label>
+							</div>
+							<div class="radio-form radio-form-padding">
+								<input type="radio" id="last-category" name="category-count" value="last-category">
+								<label for="last-category">Последней</label>
+							</div>
+							<div class="radio-form radio-form-text">
+								<input type="text" id="count" name="category-score">
+								<label for="count">По счету</label>
+							</div>
+						</div>
+						<button class="button-add-category">Добавить</button>			
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="hidden"></div>
+
+	
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/admin.js"></script>
+	
+</body>
+</html>

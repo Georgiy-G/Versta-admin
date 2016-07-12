@@ -1,0 +1,167 @@
+.container-admin
+	padding-bottom: 90px
+	.content_header
+		height: 100px
+		.breadcrumb
+			margin: 30px 0
+			padding: 0
+			list-style: none
+			width: 40%
+			display: inline-block
+			vertical-align: middle
+			li
+				display: inline-block
+				+ li::before
+					content: " > "
+				a
+					text-decoration: none
+					color: #919199
+					font-size: 12px
+
+		.content_header-button
+			float: right
+			box-sizing: border-box
+			background: $white
+			color: #4d4d4d
+			border: 1px solid #edeff2
+			border-radius: 5px
+			padding: 8px 20px
+			margin: 14px 0
+			vertical-align: middle
+			img
+				display: inline-block
+				padding-right: 10px
+				padding-top: 7px
+			div
+				display: inline-block
+				vertical-align: top
+				padding-top: 7px
+			&:focus
+				outline: 0
+			&:last-of-type
+				margin-right: 25px
+
+
+	.navbar
+		display: inline-block
+		padding: 0
+		margin: 0
+		list-style: none
+		width: 28%
+		float: left
+		margin-right: 2%
+		.navbar_item
+			font-size: 14px
+			font-weight: 300
+			cursor: pointer
+			border-width: 1px  1px 0 1px
+			border-style: solid
+			border-color: #ebebeb
+			&:last-of-type
+				border-bottom: 1px solid #ebebeb
+			.navbar-item-dropdown
+				font-size: 14px
+				font-weight: 300
+				cursor: pointer
+				padding: 8px 32px 6px 32px
+				color: #555559
+			.navbar_item-active
+				background-color: $news_button
+				color: #fff
+			.parts
+				//display: block
+				//if not to show the sublist of navbar-item, change the display to next
+				display: none
+				padding: 0
+				list-style: none
+				.part
+					padding: 8px 32px 6px 32px
+					border-width: 1px  0 0 0
+					border-style: solid
+					border-color: #ebebeb
+					position: relative
+					&:last-of-type
+						border-bottom: none
+					background: #fcfcfc
+					color: #000
+					&::before
+						display: block
+						width: 100%
+						position: absolute
+						content: "\2014"
+						top: calc( 50% - 9px)
+						color: #ebebeb
+						left: 0
+
+
+	.slider_wrapper
+		display: inline-block
+		width: 70%
+		box-sizing: border-box
+		background: $white
+		border: 1px solid #edeff2
+		border-radius: 5px
+		padding: 25px 40px 0 40px
+		.slider_top
+			padding-bottom: 25px
+			border-bottom: 1px solid #edeff2
+			font-size: 0
+			.slider_header
+				display: inline-block
+				color: #bdbdbd
+				font-size: 14px
+				&::selection
+					background: transparent
+			.slider-image
+				width: 20.38%
+				margin-right: 2%
+			.slider-title
+				width: 24.11%
+				margin-right: 2%
+			.slider-new-price
+				width: 15.91%
+				margin-right: 2%
+			.slider-old-price
+				width: 16.95%
+				margin-right: 2%
+			.edit
+				width: 13.92%
+		
+		.slider-list
+			.slider-item
+				border-bottom: 1px solid #edeff2
+				font-size: 0
+				&:last-of-type
+					border-bottom: none
+				.slider
+					display: inline-block
+					padding: 30px 0
+					vertical-align: middle
+					font-size: 14px
+					&::selection
+						background: transparent
+				.slider-image
+					width: 20.38%
+					margin-right: 2%
+					img
+						width: 120px
+						height: 120px
+				.slider-title
+					width: 24.11%
+					margin-right: 2%
+				.slider-new-price
+					width: 15.91%
+					margin-right: 2%
+				.slider-old-price
+					width: 16.95%
+					margin-right: 2%
+				.edit
+					width: 13.92%
+					img
+						vertical-align: middle
+						cursor: pointer
+					.icon-close
+						width: 8px
+						height: 8px
+						float: right
+						padding: 7px 0
